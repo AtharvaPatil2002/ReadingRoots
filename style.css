@@ -74,7 +74,7 @@ nav div div p {
 .dropdown--div {
   display: flex;
   gap: 40px;
-  margin-left: 350px;
+  margin-left: 150px;
   margin-top: 30px;
 }
 
@@ -187,7 +187,8 @@ nav div div p {
   background-size: 8px 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  appearance: none;transform: scale(1.15);
+  appearance: none;
+  transform: scale(1.15);
 }
 
 #checkboxes {
@@ -207,7 +208,7 @@ form {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin-left: 550px;
+  margin-left: 350px;
   width: 525px;
   height: 150px;
   margin-top: 100px;
@@ -247,20 +248,34 @@ form div span {
   color: #6f8f3a;
   font-weight: 900;
   width: 200px;
-  margin-left: 700px;
+  margin-left: 500px;
   text-align: center;
   transform: scale(1.2);
 }
 
-p.overSelect {
+.Sort {
   position: relative;
-  left: 1400px;
-  top: 20px;
+  left: 1150px;
+  top: 50px;
   width: 30px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 3px 27px 7px 12px;
+  width: 50px;
+  height: 15px;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  background: #fff no-repeat right 12px center url('./arrows.svg');
+  background-size: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  appearance: none;
+  transform: scale(1.15);
 }
 
 .total {
-  margin-left: 250px;
+  margin-left: 80px;
 }
 
 .total span {
@@ -272,8 +287,8 @@ p.overSelect {
   width: 65%;
   justify-content: space-between;
   font-size: 14px;
-  margin-left: 300px;
-  margin-top: 50px;
+  margin-left: 150px;
+  z-index: 999;
 }
 
 .books--div {
@@ -281,10 +296,11 @@ p.overSelect {
   line-height: 20px;
   letter-spacing: 1px;
   background-color: white;
+  transform: scale(0.8);
 }
 
 .books--div:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
   transition: 0.4s ease;
 }
 
@@ -342,7 +358,9 @@ p.overSelect {
 }
 
 .bottom {
-  height: 500px;
+  height: 100px;
+  position: relative;
+  left: -120px;
 }
 
 .pageno {
