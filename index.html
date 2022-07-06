@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equ="X-UA-Compatible" content="IE=edge" />
+  <meta name=iewport" content="width=dice-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <div>
+      <img id="logo" src="./logo_i.png" alt="" />
+      <div>
+        <h2>ReadingRoots</h2>
+        <p>Read. Share. Grow.</p>
+      </div>
+      <span id="beta">Beta</span>
+    </div>
+    <div class="nav--right">
+      <span>Home</span>
+      <span>About Us</span>
+      <span>Add Book</span>
+      <span>All Books</span>
+      <img src="./icons8-mail-30.png" alt="" />
+      <img src="./icons8-notification-bell-66.png" alt="" />
+      <img src="./icons8-users-30.png" alt="" />
+      <span class="username">jay01 <img src="./icons8-expand-arrow-24.png" alt="" /></span>
+    </div>
+  </nav>
+  <form>
+    <div>
+      <span>Keyword Search</span>
+      <div id="search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search by title or author" id="searchbar">
+      </div>
+    </div>
+    <div>
+      <span>Book Genres</span>
+      <div class="multiselect">
+        <div class="selectBox" onclick="showCheckboxes()">
+          <div class="overSelect">All</div>
+        </div>
+        <div id="checkboxes">
+          <label for="one">
+            <input type="checkbox" id="one" />Romance</label>
+          <label for="two">
+            <input type="checkbox" id="two" />Adventure</label>
+          <label for="three">
+            <input type="checkbox" id="three" />Fantasy</label>
+        </div>
+      </div>
+    </div>
+  </form>
+  <p class="user--related">USER RELATED SECTION</p>
+  <div class="dropdown--div">
+    <div>
+      <label>State</label><br>
+      <select class="dropdown">
+        <option>All</option>
+        <option>Andhra Pradesh</option>
+        <option>Bihar</option>
+        <option>Chandigarh</option>
+        <option>Chhattisgarh</option>
+        <option>Delhi</option>
+        <option>Goa</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Odisha</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Telangana</option>
+        <option>Tripura</option>
+        <option>Uttar Pradesh</option>
+        <option>Uttarakhand</option>
+        <option>West Bengal</option>
+      </select>
+    </div>
+    <div>
+      <label>City</label><br>
+      <select class="dropdown">
+        <option>All</option>
+        <option>Agartala</option>
+        <option>Ambala</option>
+        <option>Ambala City</option>
+        <option>Baddi</option>
+        <option>Bahadurgarh</option>
+        <option>Ballabgarh</option>
+        <option>Bangalore</option>
+        <option>Bengaluru</option>
+        <option>Bhilai</option>
+        <option>Bhubaneswar</option>
+        <option>Chandausi</option>
+        <option>Chandigarh</option>
+        <option>Dadri</option>
+        <option>Dehradun</option>
+        <option>Delhi</option>
+        <option>Deoband</option>
+        <option>Dhampur</option>
+        <option>Dombli</option>
+        <option>Dungarpur</option>
+        <option>Durgapur</option>
+        <option>Eluru</option>
+        <option>Ernakulam</option>
+        <option>Faridabad</option>
+        <option>Gharaunda</option>
+        <option>Ghaziabad</option>
+        <option>Gondia</option>
+        <option>Gurgaon</option>
+        <option>Gurugram</option>
+        <option>Gwalior</option>
+        <option>Haldwani</option>
+        <option>Hanumangarh Jn.</option>
+        <optionu>Haridwar</option>
+          <option>Hyderabad</option>
+          <option>Indore</option>
+          <option>Jaipur</option>
+          <option>Jalandhar</option>
+          <option>Jamshedpur</option>
+          <option>Jhansi</option>
+          <option>Kanpur</option>
+          <option>Karnal</option>
+          <option>Kolkata</option>
+          <option>Kota</option>
+          <option>Kullu</option>
+          <option>Kurukshetra</option>
+          <option>Lucknow</option>
+          <option>Mahendragarh</option>
+          <option>Mathura</option>
+          <option>Meerut</option>
+          <option>Moga</option>
+          <option>Moradabad</option>
+          <option>Mumbai</option>
+          <option>Muzaffarpur</option>
+          <option>Narwana</option>
+          <option>Nashik</option>
+          <option>New Delhi</option>
+          <option>Noida</option>
+          <option>Panipat</option>
+          <option>Prayagraj</option>
+          <option>Proddatur</option>
+          <option>Pune</option>
+          <option>Puri</option>
+          <option>Rewari</option>
+          <option>Rohtak</option>
+          <option>Sasaram</option>
+          <option>Satna</option>
+          <option>Siliguri</option>
+          <option>Sonipat</option>
+          <option>Tada</option>
+          <option>Varanasi</option>
+          <option>Visakhapatnam</option>
+          <option>Vizianagaram</option>
+          <option>Yamunanagar</option>
+          <option>Zuarinagar</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Year</label><br>
+      <select class="dropdown">
+        <option>2022</option>
+        <option>2021</option>
+        <option>2020</option>
+        <option>2019</option>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Branch</label><br>
+      <select class="dropdown">
+        <option>All</option>
+        <option>Analog Devices</option>
+        <option>Cadence</option>
+        <option>Capgemini</option>
+        <option>Delhi</option>
+        <option>Deutsche Bank</option>
+        <option>Dunnhumby</option>
+        <option>ESQ Management Solutions</option>
+        <option>Ericsson</option>
+        <option>Freelancer</option>
+        <option>Hero</option>
+        <option>Hero Motocorp</option>
+        <option>Optum</option>
+        <option>Optum Global Solutions</option>
+        <option>Thermo Fisher Scientific</option>
+        <option>United Airlines</option>
+        <option>UnitedHealth Group</option>
+        <option>WNS Global Services Pvt Ltd</option>
+      </select>
+    </div>
+
+    <div class="checkbox-container">
+      <input type="checkbox">
+      <label>Available Only</label>
+    </div>
+    <p>Filter</p>
+  </div>
+  <p class="overSelect">Sort</p>
+  <p class="total">Total Books:<span>4</span></p>
+  <div class="books">
+    <div class="books--div book--one">
+      <img src="./range.jpg" class="book--image" alt="">
+      <div>
+      <p><u>Range</u><b> by</b> David Epstein</p>
+      <p><b>Owner:</b> jay</p>
+      <div>
+        <p>Request Book</p>
+        <img src="./icons8-arrow-50.png" alt="">
+      </div>
+    </div>
+    </div>
+    <div class="books--div">
+      <img src="./kite.jpg" class="book--image" alt="">
+      <div>
+      <p><u>The Kite Runner</u><b> by</b> Khaled <br /> Hosseini</p>
+      <p><b>Owner:</b> jay</p>
+      <div>
+        <p>Request Book</p>
+        <img src="./icons8-arrow-50.png" alt="">
+      </div>
+    </div>
+    </div>
+    <div class="books--div">
+      <img src="./wishicould.jpg" class="book--image" alt="">
+      <div>
+      <p><u>Wish I Could Tell You</u><b> by</b> Durjoy <br /> Datta</p>
+      <p><b>Owner:</b> jay</p>
+      <div>
+        <p>Request Book</p>
+        <img src="./icons8-arrow-50.png" alt="">
+      </div>
+    </div>
+    </div>
+    <div class="books--div">
+      <img src="./thinklikeamonk.jpg" class="book--image" alt="">
+      <div>
+      <p><u>Think Like A Monk</u><b> by</b> Jay <br /> Shetty</p>
+      <p><b>Owner:</b> jay</p>
+      <div>
+        <p>Request Book</p>
+        <img src="./icons8-arrow-50.png" alt="">
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="bottom">
+  <div class="pageno">
+    <div>
+    <img src="./leftarrows.png" alt="">
+  </div>
+  <div>
+    <span>1</span>
+  </div>
+  <div>
+    <img src="./rightarrow.png" alt="">
+  </div>
+  </div>
+</div>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
