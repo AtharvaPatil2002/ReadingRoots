@@ -5,6 +5,10 @@
   background-color: rgb(232, 232, 232);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -56,6 +60,8 @@ nav div div p {
   justify-content: space-between;
   align-content: center;
   padding-top: 35px;
+  position: relative;
+  left: -20px;
 }
 
 .nav--right img {
@@ -408,9 +414,91 @@ form div span {
   display: none;
 }
 
+@media ( max-width: 1140px) {
+  nav {
+    width: 110vw;
+  }
+}
+
+@media ( max-width:  1000px) {
+  nav {
+    width: 125vw;
+  } 
+}
+
+@media ( max-width: 720px) {
+  nav {
+    width: 140vw;
+  } 
+}
+
+@media ( max-width:965px ) {
+  .Sort {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  nav {
+    width: 140vw;
+  }
+
+  .dropdown--div, .books {
+    margin-left: 80px;
+  }  
+}
+
+@media ( max-width: 750px) {
+  form {
+    margin-left: 220px;
+  } 
+
+  .total {
+    margin-top: 10px;
+  }
+
+  .user--related {
+    margin-left: 340px;
+  }
+  
+  .dropdown--div, .books {
+    margin-left: 30px;
+  }
+}
+
+@media ( max-width:675px ) {
+  .nav--right {
+    display: none;
+  }
+
+  nav {
+    width: 160vw;
+  }
+}
+
+@media ( max-width:650px ) {
+  nav {
+    width: 180vw;
+    justify-content: space-between;
+  }
+
+  .books {
+    width: 40%;
+  }
+}
+
 @media ( max-width: 560px ) {
   .books {
     display: none;
+  }
+
+  nav {
+    width: 125vw;
+  }
+
+  nav div:nth-child(1) {
+    position: relative;
+    left: 160px;
   }
 
   .filter--menu {
@@ -583,6 +671,43 @@ form div span {
     transform: scaleY(0.95);
   }
 }
+
+@media ( max-width: 500px ) {
+  nav {
+    width: 200vw;
+  }
+}
+
+@media ( max-width: 350px ) {
+  nav {
+    width: 220vw;
+  }
+}
+
+@media ( max-width: 300px ) {
+  nav {
+    width: 260vw;
+  }
+}
+
+@media ( max-width: 250px ) {
+  nav {
+    width: 300vw;
+  }
+}
+
+@media ( max-width: 200px ) {
+  nav {
+    width: 340vw;
+  }
+}
+
+@media ( max-width:150px ) {
+  nav {
+    width: 340vw;
+  }
+}
+
 
 @media ( max-width: 35em) {
   .dropdown--div {

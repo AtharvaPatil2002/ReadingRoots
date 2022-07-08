@@ -7,34 +7,69 @@
     margin-left: 500px;
   }
 
-  @media (max-width: 50em) {
+  .hamburgerr > div{
+    display: none;
+  }
+
+  @media ( max-width:675px ) {
+    .menu-wrap {
+      display: block;
+      position: relative;
+      left: 80px;
+    }
+
+    .menu-wrap .hamburger > div {
+      position: relative;
+      left: -200px;
+    }
+  }
+  
+  @media ( max-width:640px ) {
+    .menu-wrap {
+      display: block;
+      position: relative;
+      left: 30px;
+    }
+  }
+
+  @media ( max-width:600px ) {
     .menu-wrap {
         display: block;
+        position: relative;
+        left: 70px;
+    }
+
+    .menu-wrap .hamburger > div {
+      left: 200px;
+      top: -50px;
+      margin-left: -2px;
     }
   }
 
-  @media (max-width: 45em) {
+  @media ( max-width:560px ) {
     .menu-wrap {
-      left: 70px;
+        display: block;
+        position: relative;
+        left: 100px;
+    } 
+  }
+
+  @media ( max-width: 500px ) {
+    .menu-wrap {
+      left: 40px;
     }
   }
 
-  @media (max-width: 40em) {
+  @media ( max-width: 450px ) {
     .menu-wrap {
-      left: 10px;
-    }
-  }
-
-  @media (max-width: 35em) {
-    .menu-wrap {
-      left: -20px;
+      left: 60px;
     }
   }
   
   .menu-wrap .toggler {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: 20px;
+    left: -140px;
     z-index: 999;
     cursor: pointer;
     width: 50px;
@@ -44,9 +79,9 @@
   }
   
   .menu-wrap .hamburger {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 0;
+    left: -100px;
     z-index: 1;
     width: 60px;
     height: 60px;
@@ -60,7 +95,8 @@
   /* Hamburger Line */
   .menu-wrap .hamburger > div {
     position: relative;
-    left: 60px;
+    left: -60px;
+    top: -50px;
     flex: none;
     width: 60%;
     height: 5px;
