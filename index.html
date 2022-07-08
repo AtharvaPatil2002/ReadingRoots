@@ -6,6 +6,7 @@
   <meta http-equ="X-UA-Compatible" content="IE=edge" />
   <meta name=iewport" content="width=dice-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./menu.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
@@ -34,6 +35,24 @@
       <img src="./icons8-notification-bell-66.png" alt="" />
       <img src="./icons8-users-30.png" alt="" />
       <span class="username">jay01 <img src="./icons8-expand-arrow-24.png" alt="" /></span>
+    </div>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Add Book</a></li>
+              <li><a href="#">All Books</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
   <form>
@@ -218,66 +237,101 @@
     <p>Filter</p>
   </div>
   <p class="Sort">Sort</p>
-  <p class="total">Total Books:<span>4</span></p>
+  <p class="filter--menu"><img src="./icons8-menu-30 (1).png" alt="">Filter</p>
+  <p class="total">Total Books:<span> 4</span><span> 48</span></p>
   <div class="books">
     <div class="books--div book--one">
       <img src="./range.jpg" class="book--image" alt="">
       <div>
-      <p><u>Range</u><b> by</b> David Epstein</p>
-      <p><b>Owner:</b> jay</p>
-      <div>
-        <p>Request Book</p>
-        <img src="./icons8-arrow-50.png" alt="">
+        <p><u>Range</u><b> by</b> David Epstein</p>
+        <p><b>Owner:</b> jay</p>
+        <div>
+          <p>Request Book</p>
+          <img src="./icons8-arrow-50.png" alt="">
+        </div>
       </div>
-    </div>
     </div>
     <div class="books--div">
       <img src="./kite.jpg" class="book--image" alt="">
       <div>
-      <p><u>The Kite Runner</u><b> by</b> Khaled <br /> Hosseini</p>
-      <p><b>Owner:</b> jay</p>
-      <div>
-        <p>Request Book</p>
-        <img src="./icons8-arrow-50.png" alt="">
+        <p><u>The Kite Runner</u><b> by</b> Khaled <br /> Hosseini</p>
+        <p><b>Owner:</b> jay</p>
+        <div>
+          <p>Request Book</p>
+          <img src="./icons8-arrow-50.png" alt="">
+        </div>
       </div>
-    </div>
     </div>
     <div class="books--div">
       <img src="./wishicould.jpg" class="book--image" alt="">
       <div>
-      <p><u>Wish I Could Tell You</u><b> by</b> Durjoy <br /> Datta</p>
-      <p><b>Owner:</b> jay</p>
-      <div>
-        <p>Request Book</p>
-        <img src="./icons8-arrow-50.png" alt="">
+        <p><u>Wish I Could Tell You</u><b> by</b> Durjoy <br /> Datta</p>
+        <p><b>Owner:</b> jay</p>
+        <div>
+          <p>Request Book</p>
+          <img src="./icons8-arrow-50.png" alt="">
+        </div>
       </div>
-    </div>
     </div>
     <div class="books--div">
       <img src="./thinklikeamonk.jpg" class="book--image" alt="">
       <div>
-      <p><u>Think Like A Monk</u><b> by</b> Jay <br /> Shetty</p>
-      <p><b>Owner:</b> jay</p>
-      <div>
-        <p>Request Book</p>
-        <img src="./icons8-arrow-50.png" alt="">
+        <p><u>Think Like A Monk</u><b> by</b> Jay <br /> Shetty</p>
+        <p><b>Owner:</b> jay</p>
+        <div>
+          <p>Request Book</p>
+          <img src="./icons8-arrow-50.png" alt="">
+        </div>
       </div>
     </div>
+  </div>
+  <div class="books--mobile">
+    <div>
+      <img src="./range.jpg" alt="">
+      <div>
+        <div>
+          <p>
+            <b>Range</b><br /><i> By </i><b> David Epstein</b>
+          </p>
+          <p>Owner: Ishant</p>
+        </div>
+        <div>
+          <p class="Request--Book">Request Book</p>
+          <p class="View--Details">View Details</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="books--mobile">
+    <div>
+      <img src="./kite.jpg" alt="">
+      <div>
+        <div>
+          <p class="book--info">
+            <b>Range</b><br /><i> By </i><b> Khaled Hosseini</b>
+          </p>
+          <p>Owner: Ishant</p>
+        </div>
+        <div class="buttons">
+          <p class="Request--Book">Request Book</p>
+          <p class="View--Details">View Details</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="bottom">
-  <div class="pageno">
-    <div>
-    <img src="./leftarrows.png" alt="">
+    <div class="pageno">
+      <div>
+        <img src="./leftarrows.png" alt="">
+      </div>
+      <div>
+        <span>1</span>
+      </div>
+      <div>
+        <img src="./rightarrow.png" alt="">
+      </div>
+    </div>
   </div>
-  <div>
-    <span>1</span>
-  </div>
-  <div>
-    <img src="./rightarrow.png" alt="">
-  </div>
-  </div>
-</div>
   <script src="script.js" type="text/javascript"></script>
 </body>
 

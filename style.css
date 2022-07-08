@@ -10,6 +10,7 @@ nav {
   justify-content: space-around;
   box-shadow: 3px 3px 5px 3px #ccc;
   height: 85px;
+  width: 103vw;
 }
 
 nav div {
@@ -21,6 +22,10 @@ nav div div {
   flex-direction: column;
   padding-top: 10px;
   color: #a2671a;
+}
+
+.menu-wrap div {
+  padding-top: 0px;
 }
 
 nav div div p {
@@ -37,6 +42,10 @@ nav div div p {
   font-size: 20px;
   font-weight: 600;
   margin-top: 18px;
+}
+
+.books--mobile {
+  display: none;
 }
 
 .nav--right {
@@ -142,13 +151,14 @@ nav div div p {
 .dropdown--div p {
   display: flex;
   justify-content: center;
-  height: 40px;
+  height: 35px;
   width: 100px;
   background-color: #608426;
   color: #fff;
-  padding-top: 15px;
+  padding-top: 10px;
   border-radius: 10px;
   font-size: 24px;
+  letter-spacing: 1px;
 }
 
 .dropdown--div p:hover {
@@ -388,4 +398,212 @@ form div span {
   height: 10px;
   width: 10px;
   border-radius: 5px;
+}
+
+.total span:nth-child(2) {
+  display: none;
+}
+
+.filter--menu {
+  display: none;
+}
+
+@media ( max-width: 50em ) {
+  .books {
+    display: none;
+  }
+
+  .filter--menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    font-weight: 300;
+    position: relative;
+    top: -200px;
+    left: 400px;
+    background: transparent;
+    width: 40px;
+  }
+
+  .filter--menu img {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+
+  .dropdown--div p {
+    position: relative;
+    top: 130px;
+    left: 180px;
+  }
+
+  .nav--right {
+    display: none;
+  }
+
+  .total span:nth-child(1) {
+    display: none;
+  }
+
+  .total span:nth-child(2) {
+    display: inline;
+  }
+
+  form {
+    margin-left: 50px;
+  }
+
+  .user--related {
+    margin-left: 170px;
+  }
+
+  .dropdown--div {
+    display: block;
+    position: relative;
+    height: 150px;
+    width: 450px;
+    margin-left: 70px;
+  }
+
+  .dropdown--div div {
+    position: absolute;
+  }
+
+  .dropdown--div div:nth-child(1) {
+    top: 0;
+    left: 200;
+  }
+
+  .dropdown--div div:nth-child(2) {
+    top: 0;
+    right: 0;
+  }
+
+  .dropdown--div div:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+
+  .dropdown--div div:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
+
+  nav div:nth-child(1) {
+    margin-left: -170px;
+  }
+
+  .checkbox-container {
+    position: relative;
+    top: 80px;
+    left: 150px;
+  }
+
+  .Sort {
+    position: relative;
+    left: 400px;
+    top: 53px;
+  }
+
+  .books--mobile {
+    display: block;
+    padding: 50px;
+  }
+
+  .books--mobile div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+
+  .books--mobile div img {
+    width: 200px;
+    height: 300px;
+    z-index: 999;
+    box-shadow: 5px 5px 5px rgb(160, 160, 160);
+  }
+
+  .books--mobile div div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 275px;
+    margin-top: 5px;
+  }
+
+  .books--mobile div div:nth-child(1) {
+    height: 500px;
+    justify-content: space-between;
+    border: 1px solid rgb(185, 185, 185);
+    width: 200px;
+  }
+
+  .books--mobile div div:nth-child(2) {
+    justify-content: space-around;
+  }
+
+  .books--mobile div div p {
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .books--mobile div div p b {
+    background-color:rgb(232, 232, 232);
+  }
+  
+  .books--mobile div div p i {
+    position: relative;
+    left: 0px;
+  }
+
+  .Request--Book {
+    background-color: #86b934;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    font-size: 16px;
+    box-shadow: 5px 5px 5px rgb(160, 160, 160);
+    z-index: 999;
+    position: relative;
+    top: -3px;
+    transform: scaleY(0.95);
+  }
+
+  .View--Details {
+    background-color: #ad823a;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    font-size: 16px;
+    box-shadow: 5px 5px 5px rgb(160, 160, 160);
+    z-index: 999;
+    transform: scaleY(0.95);
+  }
+}
+
+@media ( max-width: 35em) {
+  .dropdown--div {
+    margin-left: 20px;
+  }
+
+  .user--related {
+    margin-left: 100px;
+  }
+
+  form {
+    margin-left: 10px;
+  }
+
+  .Sort {
+    position: relative;
+    left: 400px;
+    top: 53px;
+  }
+
+  .dropdown--div p {
+    left: 175px;
+  }
 }
