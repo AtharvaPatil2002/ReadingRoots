@@ -408,7 +408,7 @@ form div span {
   display: none;
 }
 
-@media ( max-width: 50em ) {
+@media ( max-width: 560px ) {
   .books {
     display: none;
   }
